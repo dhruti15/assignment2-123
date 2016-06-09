@@ -18,9 +18,19 @@ namespace Assignment21
        */
         public static void Main()
         {
-            Hero hero = new Hero("Assignment21");// Object for Hero is created and implemented
-            hero.Show();// Show method of Hero is called
-            hero.Fight();// Fight method of Hero is called
-        }
+            try
+            {
+                Hero hero = new Hero("Assignment21");// Object for Hero is created and implemented
+                hero.Show();// Show method of Hero is called
+                hero.Fight();// Fight method of Hero is called
+                SuperHero super = new SuperHero("Assignment21");
+                super.Show();
+                super.ShowPowers();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
     }
+}
 }
