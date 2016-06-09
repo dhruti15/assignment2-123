@@ -20,10 +20,11 @@ namespace Assignment21
         {
             try
             {
-                Hero hero = new Hero("Assignment21");// Object for Hero is created and implemented
+                Hero hero = new Hero("DHRUTI");// Object for Hero is created and implemented
                 hero.Show();// Show method of Hero is called
                 hero.Fight();// Fight method of Hero is called
-                SuperHero super = new SuperHero("Assignment21");
+
+                SuperHero super = new SuperHero("DHRUTI");
                 super.Show();
                 super.ShowPowers();
             }
