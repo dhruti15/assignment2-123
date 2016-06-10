@@ -125,10 +125,13 @@ namespace Assignment21
          */
         public void Show()
         {
+            Console.WriteLine("==============================================");
             Console.WriteLine(" > Hi! {0} the hero. ", _name);
             Console.WriteLine(" > This is our hero's Strength: " + _strength);
             Console.WriteLine(" > This is our hero's Speed: " + _speed);
             Console.WriteLine(" > This is our hero's Health: " + _health);
+            Console.WriteLine("==============================================");
+            Console.WriteLine();
         }
 
         //Constructor

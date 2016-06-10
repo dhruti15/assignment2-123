@@ -3,17 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/*
+* Author: Patel DHRUTI
+* Student Number: 300857555
+* Date: June 9, 2016
+* Date Modified: June 9, 2016
+* Description: The SuperHero Class Assignment 2
+* Version: 0.0.2 Added documentation.
+*/
 namespace Assignment21
-{ /**
-    * This class defines  a generic SuperHero class
+{ /**<summary> This class defines  a generic SuperHero class
+     *</summary>
+    *
     * 
     * @class SuperHero 
     * 
     * 
-    * @field {string} _superpowers
+    * @field {stringArray} _superpowers
     */
-    public class SuperHero : Hero
+     class SuperHero : Hero
     {
         //private instance variables
         private string[] _superPowers = new string[3];
@@ -42,14 +50,16 @@ namespace Assignment21
         }
         // private methods
         /**
-        * <summary>
-        * This method randomly generates the ability numbers for the
-        * super speed, super strength, body amour, flight, fire generations and wheather control
-        * </summary>
-        * @method _generateRandomPowers
-        * @return {void}
-        */
-        
+         * <summary>
+         * This is method creates super powers for the hero and assigns 
+         * 3 super powers to the hero. The list creates an array for the 
+         * super powers.
+         * The add atribute adds the number of powers in the list.
+         * </summary>
+         * @method _generateRandomPowers
+         * @return {void}
+         */
+
         private void _generateRandomPowers()
         {
             int[] arr = new int[] { 0, 0, 0, 0, 0, 0 };
@@ -62,7 +72,7 @@ namespace Assignment21
                     if (arr[a - 1] == 0)
                     {
                         arr[a - 1] = 1;
-                        SuperPowers[i] = " > This is our hero's Super Speed";
+                        SuperPowers[i] = " >~~~~~ Time for Super Speed";
                         i++;
                     }
 
@@ -72,7 +82,7 @@ namespace Assignment21
                     if (arr[a - 1] == 0)
                     {
                         arr[a - 1] = 1;
-                        SuperPowers[i] = " > This is our hero's Super Strength";
+                        SuperPowers[i] = " >~~~~~ Time for Super Strength";
                         i++;
                     }
 
@@ -82,7 +92,7 @@ namespace Assignment21
                     if (arr[a - 1] == 0)
                     {
                         arr[a - 1] = 1;
-                        SuperPowers[i] = " > This is our hero's Body Armor";
+                        SuperPowers[i] = " >~~~~~ Time for Body Armor";
                         i++;
                     }
 
@@ -92,7 +102,7 @@ namespace Assignment21
                     if (arr[a - 1] == 0)
                     {
                         arr[a - 1] = 1;
-                        SuperPowers[i] = " > This is our hero's Flight: ";
+                        SuperPowers[i] = " >~~~~~ Time for Flight: ";
                         i++;
                     }
 
@@ -102,7 +112,7 @@ namespace Assignment21
                     if (arr[a - 1] == 0)
                     {
                         arr[a - 1] = 1;
-                        SuperPowers[i] = " > This is our hero's Fire Generation";
+                        SuperPowers[i] = " >~~~~~ Time for Fire Generation";
                         i++;
                     }
 
@@ -112,18 +122,20 @@ namespace Assignment21
                     if (arr[a - 1] == 0)
                     {
                         arr[a - 1] = 1;
-                        SuperPowers[i] = " > This is our hero's Weather Control";
+                        SuperPowers[i] = " >~~~~~ Time for Weather Control";
                         i++;
                     }
 
                 }
             }
         }
+        //PUBLIC METHODS ++++++++++++++++++++++++++++++++++
         /**
          * <summary>
-         * This method will display the Hero’s powers
+         * This method outputs the super powers of the hero
+         * to the console
          * </summary>
-         * @method Show
+         * @method ShowPowers
          * @return {void}
          */
         public void ShowPowers()

@@ -1,5 +1,12 @@
 ﻿using System;
-
+/*
+* Author: Patel DHRUTI
+* Student Number: 300857555
+* Date: June 9, 2016
+* Date Modified: June 9, 2016
+* Description: The Hero Class Assignment 2
+* Version: 0.0.3 final version.
+*/
 namespace Assignment21
 {
 
